@@ -1,1 +1,118 @@
-/* css */
+.title {
+font: arial;
+text-align: center;
+color: rgb(17, 127, 155);
+}
+
+.frame {
+position: absolute;
+width: 450px;
+height: 300px;
+left: 41px;
+top: 185px;
+
+background: rgba(228, 224, 224, 0);
+border: 2px solid #128587;
+box-sizing: border-box;
+}
+
+
+.resultadoFrame {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+   
+    left: 920px;
+    top: 180px;
+    margin: 50px;
+    border-radius: 50%;
+    
+    border:  solid #128587;
+    box-sizing: border-box;
+    }
+
+   
+
+.textoInicial {
+position: absolute;
+width: 420px;
+height: 530px;
+left: 50px;
+top: 50px;
+
+font-family: Sedan;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 30px;
+text-align:justify;
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+
+.cifrarTexto {
+position: absolute;
+width: 280px;
+height: 60px;
+left: 590px;
+top: 195px;
+
+}
+
+.decifrarTexto {
+position: absolute;
+width: 280px;
+height: 60px;
+left: 590px;
+top: 360px;
+}
+
+.clique {
+    position: absolute;
+    width: 280px;
+    height: 10px;
+    left: 150px;
+    top: 500px;
+        }
+
+.senha {
+position: absolute;
+width: 550px;
+height: 20px;
+left: 850px;
+top: 208px;
+
+font-family: Sedan;
+font-style: normal;
+font-weight: normal;
+font-size: 19px;
+line-height: 39px;
+text-align: center;
+
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+
+.resultado {
+position: absolute;
+width: 453px;
+height: 39px;
+left: 850px;
+top: 320px;
+
+font-family: Sedan;
+font-style: normal;
+font-weight: normal;
+font-size: 19px;
+line-height: 39px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+color: #000000;
+}
