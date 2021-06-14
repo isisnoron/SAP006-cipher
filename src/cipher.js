@@ -2,15 +2,20 @@ const cipher = {
   encode: function cifrar(offset, string) {
     let senhaCriptografada = "";
 
+    if (offset === 0 || string === 0 || offset === null || string === null)
+    throw TypeError("Número e mensagem inválida");
+
     for (let i = 0; i < string.length; i++) {
       let iniciar = string.charCodeAt(i);  //irá pegar o código ASC de cada letra;
 
-      if (iniciar >= 0 && iniciar < 65 || iniciar >= 91 && iniciar <= 96 || iniciar >= 123 && iniciar <= 126) { //caracteres especiais sem deslocar
-        senhaCriptografada += String.fromCharCode(iniciar)
+       //caracteres especiais sem deslocar
+      if (iniciar >= 0 && iniciar < 65 || iniciar >= 91 && iniciar <= 96 || iniciar >= 123 && iniciar <= 126) {
+        senhaCriptografada += String.fromCharCode(iniciar);
       }
 
+      //pega o códigoASC maiúsculas c deslocamento;fórmula daniel ((codigoDaLetraAsc-65+deslocamento)%26)+65 
       if (iniciar >= 65 && iniciar <= 90) {
-        let newCode = ((iniciar - 65 + offset) % 26) + 65; //pega o códigoASCII maiúsculas c deslocamento;fórmula daniel ((codigoDaLetraAsc-65+deslocamento)%26)+65 
+        let newCode = ((iniciar - 65 + offset) % 26) + 65; 
         let code = String.fromCharCode(newCode);
         senhaCriptografada = senhaCriptografada.concat(code);
       }
@@ -19,7 +24,7 @@ const cipher = {
         let code = String.fromCharCode(newCode);
         senhaCriptografada = senhaCriptografada.concat(code);
 
-      }   /* para fazer caracteres e numeros não aparecerem usar: 
+      }   /* para fazer caracteres e numeros não aparecerem, usar: 
       else if (iniciar >= 32 && iniciar <= 64 ){
         iniciar = ((iniciar - 32 + offset) % 33) + 32;
       }*/
@@ -32,13 +37,15 @@ const cipher = {
   decode: function (offset, string) {
     let senhaDescriptografada = "";
 
+    if (offset === 0 || string === 0 || offset === null || string === null)
+    throw TypeError("Número e mensagem inválida");
+
     for (let i = 0; i < string.length; i++) {
       let iniciar = string.charCodeAt(i); //irá pegar o código ASC de cada letra;
 
       if (iniciar >= 0 && iniciar < 65 || iniciar >= 91 && iniciar <= 96 || iniciar >= 123 && iniciar <= 126) { //caracteres especiais sem deslocar
-        senhaDescriptografada += String.fromCharCode(iniciar)
+        senhaDescriptografada += String.fromCharCode(iniciar);
       }
-
 
       if (offset > 0 && iniciar >= 65 && iniciar <= 90) {
         let newCode = ((iniciar + 65 - offset) % 26) + 65; //formula inversa para subtrair deslocamento
@@ -54,7 +61,7 @@ const cipher = {
 
       }
     }
-    return senhaDescriptografada
+    return senhaDescriptografada;
 
   },
 };
