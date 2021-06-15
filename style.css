@@ -1,0 +1,97 @@
+.title {
+   text-align: center;
+   color: rgb(17, 165, 153);
+}
+
+.frame {
+    position: absolute;
+    width: 450px;
+    height: 305px;
+    left: 41px;
+    top: 185px;
+
+    background: rgba(228, 224, 224, 0);
+    border-radius: 7px;
+    border: 2px solid #2eb997;
+    box-sizing: border-box;
+    }
+
+
+.img {
+    position: absolute;
+    left: 920px;
+    top: 150px;
+    margin: 50px;
+
+}
+
+.textoInicial {
+    position: absolute;
+    width: 420px;
+    height: 530px;
+    left: 50px;
+    top: 50px;
+
+    font-family: Sedan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align:justify;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.cifrarTexto {
+   position: absolute;
+    width: 280px;
+    height: 60px;
+    left: 590px;
+    top: 195px;
+     
+}
+
+.decifrarTexto {
+    position: absolute;
+    width: 280px;
+    height: 60px;
+    left: 590px;
+    top: 360px;
+}
+
+.clique {
+    position: absolute;
+    width: 280px;
+    height: 10px;
+    left: 150px;
+    top: 500px;
+  }
+
+.button1 {
+    font-weight: bold;
+    color: rgb(29, 148, 138);
+  
+    cursor: pointer;
+}
+
+.senha {
+
+width: 550px;
+height: 20px;
+left: 850px;
+top: 208px;
+
+font-family: Sedan;
+font-style: normal;
+font-weight: normal;
+font-size: 19px;
+line-height: 39px;
+text-align: center;
+
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div id="root">
+    <h3 class="img"> <img src="img/conf.png"> </h3>
+
+    <h1 class="title">TENHA UMA SENHA SEGURA!</h1>
+    <div class="frame"></div>
+    <p class="textoInicial"> Se você está aqui, é porque deseja criar uma senha segura. Seja para o alarme da casa, para
+      seu e-mail ou o login de um site.
+      Para ter uma senha segura, basta usar o nosso programa que utiliza o método Cifra de Cezar para criptografar
+      mensagens. Lembre-se, para não
+      esquecer sua senha basta lembrar qual número de deslocamento você escolheu.
+      Agora, vamos criar sua senha super secreta!
+      Digite abaixo um número de deslocamento que deseja, depois, é só digitar sua senha nas caixas ao lado e clicar no
+      botão cifrar ou decifrar!
+    </p>
+
+
+
+    <form method="get" class="clique" id="teste">
+      <input class="offset" type="number" id="offset" placeholder="Escolha um número" required>
+    </form>
+
+    <form class="cifrarTexto" method="get" id="cifrarTexto">
+      <label for="senha">Digite abaixo sua senha para <b>criptografar!</b></label>
+      <textarea id="senha" name="senha" rows="5" cols="39"></textarea>
+      <button class="button1" type="submit" id="botaoCifra">Cifrar</button>
+    </form>
+
+
+    <form class="decifrarTexto" method="get" id="decifrarTexto">
+      <label for="senhaCifrada">Digite abaixo para <b>descriptografar!</b></label>
+      <textarea id="senhaCifrada" name="senhaCifrada" rows="5" cols="39"></textarea>
+      <button class="button1" type="submit" id="botaoDecifra">Decifrar</button>
+    </form>
+
+  </div>
+  <script src="index.js" type="module"></script>
+
+</body>
+
+</html>
