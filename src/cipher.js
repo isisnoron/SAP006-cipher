@@ -2,20 +2,20 @@ const cipher = {
   encode: function cifrar(offset, string) {
     let senhaCriptografada = "";
 
-    if (offset === 0 || string === 0 || offset === null || string === null)
-    throw TypeError("Número e mensagem inválida");
+    if (offset == 0 || string == 0 || offset == null || string == null) //estrutura condicional if com valor boleano e operador logico 'ou'
+      throw TypeError("Número e mensagem inválida"); //lança uma excessão, as instruçoes seguintes não serão executadas
 
-    for (let i = 0; i < string.length; i++) {
+    for (let i = 0; i < string.length; i++) {  // loop, string.lenght é o tamanho da senha e i++ irá somar
       let iniciar = string.charCodeAt(i);  //irá pegar o código ASC de cada letra;
 
-       //caracteres especiais sem deslocar
+      //caracteres especiais sem deslocamento
       if (iniciar >= 0 && iniciar < 65 || iniciar >= 91 && iniciar <= 96 || iniciar >= 123 && iniciar <= 126) {
         senhaCriptografada += String.fromCharCode(iniciar);
       }
 
-      //pega o códigoASC maiúsculas c deslocamento;fórmula daniel ((codigoDaLetraAsc-65+deslocamento)%26)+65 
-      if (iniciar >= 65 && iniciar <= 90) {
-        let newCode = ((iniciar - 65 + offset) % 26) + 65; 
+      //pega o códigoASC maiúsculas c deslocamento; fórmula daniel ((codigoDaLetraAsc-65+deslocamento)%26)+65 
+      if (iniciar >= 65 && iniciar <= 90) { // pegará dentro da tabela ASCII a msg
+        let newCode = ((iniciar - 65 + offset) % 26) + 65; // formula daniel para cifrar
         let code = String.fromCharCode(newCode);
         senhaCriptografada = senhaCriptografada.concat(code);
       }
@@ -38,7 +38,7 @@ const cipher = {
     let senhaDescriptografada = "";
 
     if (offset === 0 || string === 0 || offset === null || string === null)
-    throw TypeError("Número e mensagem inválida");
+      throw TypeError("Número e mensagem inválida");
 
     for (let i = 0; i < string.length; i++) {
       let iniciar = string.charCodeAt(i); //irá pegar o código ASC de cada letra;

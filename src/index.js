@@ -1,6 +1,6 @@
 import cipher from './cipher.js'
 
-
+//declarei e atribui valor as variáveis 
 const senha = document.getElementById("senha");
 const senhaCifrada = document.getElementById("senhaCifrada");
 const botaoCifra = document.getElementById("botaoCifra");
@@ -23,16 +23,3 @@ botaoDecifra.onclick = function (evento) {
 
     evento.preventDefault();
 };
-
-
-/*
-Executa qnd uma tecla for pressionada no input
-document.getElementById("mensagem").onkeypress = function(e) {
-    //  Se for pressionado ENTER
-    if (e.keyCode == ?) {
-        mostrarValor();
-        e.preventDefault();
-    }
-}
-
-//let alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","U","V","W","X","Y","Z"];*/
