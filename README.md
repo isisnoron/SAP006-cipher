@@ -1,12 +1,12 @@
 # Tenha uma senha segura
-Tenha uma senha segura é uma aplicação web feita no primeito projeto do bootcamp da Laboratória. Essa aplicação permite ao usuário tornar uma senha simples em uma senha segura, utilizando uma criptografia chamada Cifra de César. Assim, poderá utilizar palavras fáceis para cifrar, como nome do animal de estimação, nome do companheiro ou mãe. Essas palavras serão cifradas, tornando-se seguras. Assim, o usuário poderá navegar tranquilamente na web sem medo do ataque de hackers. O usuário também poderá utilizar a ferramenta para decifrar sua mensagem.
+Aplicação web feita no primeito projeto do _bootcamp_ da **Laboratória**. Essa aplicação permite ao usuário tornar uma senha simples em uma senha segura, utilizando uma criptografia chamada Cifra de César. Assim, o usuário poderá navegar tranquilamente na web, sem medo do ataque de hackers. O usuário também poderá utilizar a ferramenta para decifrar sua senha.
 
 ## Índice
 
-* [1. Resumo do projeto](#1-resumo-do-projeto)
+* [1. Sobre o projeto](#1-sobre-o-projeto)
 * [2. Definição do Usuário](#2-definição-do-usuário)
 * [3. Instruções e explicação de uso](#3-instruções-e-explicação-de-uso)
-* [4. UX](#4-considerações-gerais)
+* [4. UX / UI](#4-ux-/-ui)
 * [5. Objetivos de aprendizagem](#5-objetivos-de-aprendizagem)
 * [6. Critérios de aceitação mínimos do projeto](#6-critérios-de-aceitação-mínimos-do-projeto)
 
@@ -16,7 +16,7 @@ O usuário poderá cifrar e decifrar uma senha indicando a chave de deslocamento
 
 **"Tenha uma senha segura"** utiliza a técnica de criptografia denominada "Cifra de César", um tipo de cifra de substituição na qual cada letra do texto é substituída por outra (de acordo com o número de deslocamento que o usuário escolher).
 
-A funcionalidade do projeto é uma aplicação web para um usuário que deseja ter uma senha mais segura, podendo navegar tranquilamente. Por exemplo: um usuário quer usar o nome do seu animal de estimação como senha. São senhas muito fáceis de se descobrir, e por isso o método Cifra de César permite ao usuário continuar usando essas senhas, porém de forma cifrada utilizando um número de deslocamento, tornando-as seguras.
+A funcionalidade do projeto é uma aplicação web para um usuário que deseja ter uma senha mais segura, podendo navegar tranquilamente. Por exemplo: um usuário quer usar o nome do seu animal de estimação como senha. São senhas muito fáceis de se descobrir, e por isso o programa permite ao usuário continuar usando essas senhas, porém de forma cifrada utilizando um número de deslocamento, tornando-as seguras.
 
 ## 2. Definição do Usuário
 Os principais usuários do produto são pessoas com dificuldade para elaborar senhas seguras. Ao acessar a aplicação web, o usuário poderá inserir senhas como o nome do seu animal de estimação, do seu companheiro ou qualquer outra palavra. 
@@ -44,7 +44,7 @@ Caso o usuario venha a esquecer qual a senha criptografada (por tornarem-se letr
 * Interface
 Foi utilizada uma interface simples, com um texto inicial orientando os passos para obter a senha segura. Possui opção do usuário escolher o número de deslocamento, 2 janelas para inserir a mensagem para ser cifrada ou decifrada, retornando o resultado no mesmo lugar. E dois botões, um para cifrar e o outro decifrar. Também foi implementado uma imagem com os dizeres "Top Secret - Confidential", em vermelho. 
 
-<img src="img/print.png">
+<img src="src/img/print.png">
 
 ## 5. Objetivos de aprendizagem
 
