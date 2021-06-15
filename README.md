@@ -12,7 +12,7 @@ Aplicação web feita no primeito projeto do _bootcamp_ da **Laboratória**. Ess
 
 ## 1. Sobre o projeto
 
-O usuário poderá cifrar e decifrar uma senha indicando a chave de deslocamento (offset).
+O usuário poderá cifrar e decifrar uma senha, indicando a chave de deslocamento (offset).
 
 **"Tenha uma senha segura"** utiliza a técnica de criptografia denominada "Cifra de César", um tipo de cifra de substituição na qual cada letra do texto é substituída por outra (de acordo com o número de deslocamento que o usuário escolher).
 
@@ -42,6 +42,7 @@ Caso o usuario venha a esquecer qual a senha criptografada (por tornarem-se letr
 
 ## 4.  UX / UI
 * Interface
+
 Foi utilizada uma interface simples, com um texto inicial orientando os passos para obter a senha segura. Possui opção do usuário escolher o número de deslocamento, 2 janelas para inserir a mensagem para ser cifrada ou decifrada, retornando o resultado no mesmo lugar. E dois botões, um para cifrar e o outro decifrar. Também foi implementado uma imagem com os dizeres "Top Secret - Confidential", em vermelho. 
 
 <img src="src/img/print.png">
@@ -95,6 +96,4 @@ JavaScript como ferramentas.
 
 ## 6. Critérios de aceitação mínimos do projeto
 
-Use o alfabeto simples (somente maiúsculas e sem ç):
-
-* A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+Use o alfabeto simples (somente maiúsculas e sem ç).
