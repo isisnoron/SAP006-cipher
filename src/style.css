@@ -1,97 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Zen Antique Soft", serif;
+}
 .title {
-   text-align: center;
-   color: rgb(17, 165, 153);
+  margin-top: 3%;
+  text-align: center;
+  color: rgb(17, 165, 153);
 }
 
-.frame {
-    position: absolute;
-    width: 450px;
-    height: 305px;
-    left: 41px;
-    top: 185px;
-
-    background: rgba(228, 224, 224, 0);
-    border-radius: 7px;
-    border: 2px solid #2eb997;
-    box-sizing: border-box;
-    }
-
-
-.img {
-    position: absolute;
-    left: 920px;
-    top: 150px;
-    margin: 50px;
-
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
+.sobre {
+  width: 450px;
+  height: 340px;
+  background: rgba(228, 224, 224, 0);
+  border-radius: 7px;
+  border: 2px solid #2eb997;
+  box-sizing: border-box;
+  margin-top: 8%;
+  margin-left: 5%;
+}
 .textoInicial {
-    position: absolute;
-    width: 420px;
-    height: 530px;
-    left: 50px;
-    top: 50px;
-
-    font-family: Sedan;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 30px;
-    text-align:justify;
-    display: flex;
-    align-items: center;
-    color: #000000;
+  padding: 3%;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: justify;
+  align-items: center;
+  color: #000000;
 }
 
-.cifrarTexto {
-   position: absolute;
-    width: 280px;
-    height: 60px;
-    left: 590px;
-    top: 195px;
-     
+.encode-decode {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 55%;
+  margin-top: 10%;
+  margin-right: 12%;
+}
+.img {
+  z-index: -1;
+  align-self: center;
+  width: 15%;
+  height: 20%;
+  margin-top: 5%;
 }
 
-.decifrarTexto {
-    position: absolute;
-    width: 280px;
-    height: 60px;
-    left: 590px;
-    top: 360px;
+.header {
+  display: flex;
+}
+
+.encodeText {
+  width: 280px;
+}
+
+.decodeText {
+  width: 280px;
 }
 
 .clique {
-    position: absolute;
-    width: 280px;
-    height: 10px;
-    left: 150px;
-    top: 500px;
-  }
+  margin-bottom: 5%;
+}
 
-.button1 {
-    font-weight: bold;
-    color: rgb(29, 148, 138);
-  
-    cursor: pointer;
+.btn-cifrar-decifrar {
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  border: none;
+  border-radius: 7px;
+  background-color: #2eb997;
+  box-shadow: 0 2px 2px rgb(20 20 20 / 37%);
+  width: 26%;
+  padding: 2%;
+}
+
+.btn-cifrar-decifrar:hover {
+  background-color: #5ed8ba;
 }
 
 .senha {
-
-width: 550px;
-height: 20px;
-left: 850px;
-top: 208px;
-
-font-family: Sedan;
-font-style: normal;
-font-weight: normal;
-font-size: 19px;
-line-height: 39px;
-text-align: center;
-
-display: flex;
-align-items: center;
-
-color: #000000;
+  width: 550px;
+  height: 20px;
+  left: 850px;
+  top: 208px;
+  font-size: 19px;
+  line-height: 39px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: #000000;
 }
 
+.errorMsg {
+  color: red;
+  min-height: 16.8px;
+  position: relative;
+  bottom: 5px;
+  text-align: center;
+  font-size: 13px;
+}
+
+@media (min-width: 320px) and (max-width: 1019px) {
+  .img,
+  .sobre {
+    display: none;
+  }
+
+  /* .sobre {
+    width: 90%;
+    height: 230px;
+    background: none;
+    border: none;
+    margin: 0;
+  } */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .encode-decode {
+    /* width: 50%; */
+    margin-top: 3%;
+    margin-right: 0;
+  }
+
+  .txt-encode-decode {
+    font-size: 18px;
+    text-align: center;
+  }
+  .encodeText,
+  .decodeText {
+    width: 100%;
+    text-align: center;
+  }
+  .btn-cifrar-decifrar {
+    width: 20%;
+    padding: 2%;
+    font-size: 15px;
+  }
+}
